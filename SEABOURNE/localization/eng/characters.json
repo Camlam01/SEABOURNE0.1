@@ -1,0 +1,20 @@
+{
+  "SEABOURNE-THE_SEABOURNE.title": "The Seabourne",
+  "SEABOURNE-THE_SEABOURNE.titleObject": "The Seabourne",
+  "SEABOURNE-THE_SEABOURNE.description": "A swashbuckling siren using deep-sea arcane treasures to enhance her cards. Equipped with her trusty fishing rod, she can pull cards from the discard pile into her hand. Her deafening siren songs can put enemies into a trance.",
+  "SEABOURNE-THE_SEABOURNE.pronounObject": "her",
+  "SEABOURNE-THE_SEABOURNE.possessiveAdjective": "her",
+  "SEABOURNE-THE_SEABOURNE.pronounPossessive": "hers",
+  "SEABOURNE-THE_SEABOURNE.pronounSubject": "she",
+  "SEABOURNE-THE_SEABOURNE.goldMonologue": "The sea always pays her back.",
+  "SEABOURNE-THE_SEABOURNE.eventDeathPrevention": "The tide refuses to take her yet.",
+  "SEABOURNE-THE_SEABOURNE.aromaPrinciple": "saltwater",
+  "SEABOURNE-THE_SEABOURNE.cardsModifierTitle": "Treasures of the Deep",
+  "SEABOURNE-THE_SEABOURNE.cardsModifierDescription": "Gems, Wet, Cast, Reel, Cannonballs.",
+  "SEABOURNE-THE_SEABOURNE.banter.alive.endTurnPing": "The tide turns.",
+  "SEABOURNE-THE_SEABOURNE.banter.dead.endTurnPing": "The sea falls silent.",
+  "THE_ARCHITECT.talk.SEABOURNE-THE_SEABOURNE.0-0r.char": "The sea answers my call.",
+  "THE_ARCHITECT.talk.SEABOURNE-THE_SEABOURNE.0-0r.next": "And I answer its pull.",
+  "THE_ARCHITECT.talk.SEABOURNE-THE_SEABOURNE.0-1r.ancient": "Ancient waters remember.",
+  "THE_ARCHITECT.talk.SEABOURNE-THE_SEABOURNE.0-attack": "Hear my song."
+}
