@@ -1,0 +1,266 @@
+THE SEABORNE.
+═════════════════════════════
+DESCRIPTION:
+═════════════════════════════
+A swashbuckling siren using deep-sea arcane treasures to enhance her cards. Equipped with her trusty fishing rod, she can pull cards from the discard pile into her hand. Her deafening siren songs can put enemies into a trance.
+
+═════════════════════════════
+CORE MECHANICS:
+═════════════════════════════
+CAST:
+Cast is a buff that the player can obtain through playing various cards. The amount of cast you have tells you which card in the discard pile is ‘Hooked’. 1 stack of cast references the most recently discarded card, and each extra stack moves your ‘hook’ onto cards deeper in the discard pile. Cast stacks are not removed until the reel effect is triggered, which causes all stacks of cast to be removed after the reel is resolved.
+
+REEL:
+When you reel, all cards between your hooked card and the most recently discarded card are put into your hand. This starts with the hooked card and then works towards  the most recent discard. If the players hand is full, all cards that try to enter the hand are instead discarded, aligning with normal Slay the Spire mechanics. When a reel is triggered, all cast is removed from the player.
+
+WET:
+This is a keyword found on some cards. If a card has this keyword, when it is reeled in, it is immediately played instead of entering your hand.
+Cards can have multiple stacks of wet on them, meaning when they are reeled, they are played multiple times depending on how many wet stacks they have. This is similar to the replay mechanic in the base game.
+
+IMBUED:
+Card with the imbued modifier are effected multiple times by gem enhancements. For example, for a card which deals 10 damage, if it is enhanced by a ruby, it gains 20% increased damage, meaning it now does 12 damage. However, if it also had imbued 2, it would instead gain 60% increased damage and do 16 damage.
+
+UNIMBUED:
+A card with the unimbued modifier can’t effected by enhancements. This mechanic may not be required for the final card pool, but I want to include it encase it is needed for balancing.
+
+WATERWALL:
+Waterwall is a buff which wears off at the end of the turn. The buff blocks attack damage ONLY if damage ≤ stacks of waterwall, otherwise it blocks none of the damage of that attack. This makes it strong for dealing with multi-hits.
+
+
+TRANCE:
+Trance is a debuff you can apply to enemies. Enemies with trance don’t complete their turn, meaning they use their intent, but their AI doesn’t progress to the next move. At the end of the turn, enemies lose 1 Trance.
+ 
+GEMS:
+The player starts with 2 Gem Slot. You may only have 1 of each of the 6 types of gems at a time. Gems are recharged at turn start, and give the first suitable card you play each turn a buff, before losing their charge. 
+
+Ruby → +20% Damage  
+Sapphire → +20% Block
+Emerald → +1 Buff/Debuff stacks  
+Amber → -1 Cost, Gain Exhaust  
+Opal → +1 Cast
+Diamond → +1 Wet  
+
+These modifiers are NOT enchantments, and can be placed on enchanted cards.
+Note: For placeholder visuals, I am thinking about using the defects orb slot visuals with some logic modifications.
+
+
+CANNON:
+The cannon is a weapon which the Seabourne always has available. It can be fired by any card which has the ‘fire’ keyword, including one of the starting cards.
+When you fire the cannon unloaded, it shoots scorching water.
+
+Scorching Water → 6 damage to all enemies.
+
+You can also load cannonballs into the cannon.
+
+Loaded → Fires all loaded cannonballs at target.
+
+LOAD:
+Cannonball cards have the keyword load. This means they load into the cannon, and are not played properly, although doing this will still allow them to gain a gem enhancement. 
+Once the cannon is fired, it shoots all cannonballs at one target in the order in which they were loaded, which causes the cannonball cards to be played ‘properly’ (all effects on the card which are not the ‘load’ keyword).
+Both the loading and firing of each cannonball count as a ‘card play’ for gameplay interactions, however because they lead to different effects, they will have to be mechanically differentiated.
+Once a cannonball is fired, it enters the discard pile like after a normal card play.
+All cannonball damage is considered attack damage.
+
+SLIPPERY:
+This mechanic already exists in STS2. Check the sts2 decompiled repo for details.
+
+
+
+
+═════════════════════════════
+STARTER KIT:
+═════════════════════════════
+Fire Cannon — 2(1): Fire cannon  
+Fish — 0: Cast 1, Reel 
+Starting Relic: Gain 1 Cast each turn  
+
+═════════════════════════════
+COMMON CARDS:
+═════════════════════════════
+
+Skills:
+Invigorate — 1(0): Recharge treasures, Exhaust.
+Ruby Ruse — 1: Acquire Ruby, Block 8(10), Exhaust.
+Flub - 1: Cast 2(3), Block 7(8)
+Emerald Ebb — 2: Acquire Emerald, Gain 7(9) Waterwall, Exhaust
+Deep Diamond — 2(1): Acquire Diamond, Cast 3, Exhaust
+Oceanic Opal — 1(0): Acquire Opal, Reel, Exhaust
+Entangle — 1: Cast 2 and Apply Weak 1(2) to ALL enemies.
+Pull Through — 2: Reel, Block 11(14).
+Stock Up — 0: Create 2(3) Cannonballs, Exhaust.
+Mucus Mask — 1: Gain Slippery 1(2) this turn, this card loses 1 Slippery this combat.
+
+Attacks:
+Sapphire Strike — 1: Acquire Sapphire, deal 8(12) damage. Exhaust.
+Amber Anguish — 2: Acquire Amber, deal 11(14) . Exhaust.
+Splashing Strike — 1: Cast 1, Deal 5 damage to all, Wet 1(2).
+Cannonball — 1: Load, Deal 15(20) damage when fired.
+Tackle — 0: Deal 3 damage 2(3) times.
+Swashbuckling Strike — 2: Deal 15(20) damage, Wet.
+Line Whip — 2: Reel, Deal 5(7) Damage and apply 1(2) vulnerable to All
+Whiplash — 1: Reel, Deal 8(11) damage 
+Tidal Wave — 1: Deal 2(3) damage per card in hand, Wet.
+Rod Ram — 0: Cast 2, deal 5(7) damage.
+
+═════════════════════════════
+UNCOMMON CARDS:
+═════════════════════════════
+
+Skills:
+Hoarder — 1: Gain 1 Treasure Slot, Gain 7(8) block.
+Fully Loaded — 2(1): Reel, Load all cannonballs in hand.
+Barbed Hook — 1: This turn, gain 1 Temp Strength per reeled card. (Wet)
+Sunken Treasure — 1: Acquire Emerald/Amber, Cast 2 (Innate).
+Siren’s Screech — 3: Apply Trance 3(4), Wet.
+Empower — 2: Apply 5(6) Trance, enemy gains 3 strength.
+Tidal Barrier — 2: Gain 4 Waterwall 3(4) times.
+Ready for War — 0: Cast 3, create 1(2) Spiny Cannonballs.
+Riptide — 1: Gain 2(3) Block per card in hand.
+Trawl — X: Cast 2X, (Reel)
+Rocky Seas — 1: Gain block equal to your Waterwall. Cast 1. (Wet).
+Power of the Sea — 2(1): Gain 2 energy, Wet.
+Water Barrier — 2(1): Gain Waterwall equal to your Cast, Reel.
+Luck of the Sea — 1: Gain 1 of 2(3) treasures, Wet.
+Waterborne — 2: Give a card in your hand wet. Gain 8(12) Waterwall.
+Ancient Curse — 1: Apply 1 Vulnerable and 1 Weak to ALL enemies, Imbued 1(2)
+Liquid Mind - 3(2): Gain 2 slippery, reduce the value on this card by 1.
+Determined - 1: Give all enemies 3 Strength. Gain 1 Slippery this turn. 
+
+Attacks:
+Cannon Volley — 2: Fire the cannon. EACH consecutive cannonball does 20 percent more damage. 
+Tentacle Slam — 3: Deal 15(20) to all, Wet
+Cast Strike — 1: Cast 3, deal 6(8) damage for each energy on the hooked card.
+Vimshot — 1: Load, Deal 15 damage + 1(2) energy
+Roundshot — 2: Load, Deal 30(40) damage 
+Grapeshot - 0: Load, 5(10) damage and Apply 1 Vulnerable.
+Tsunami — 3: Deal 20(25) damage + 20(25) Waterwall
+Yin & Yang — 2: Deal 8 damage and Apply 1 Weak to all. Aquire Diamond/Opal (Innate)
+Fire & Water — 1: Deal 5 Damage, Gain 5 Block, Acquire Ruby/Sapphire (Innate).
+Soul Stab — 0: Deal 5(7) damage and apply 1 Vulnerable, Imbued 1
+Rod Whip — 0: Deal 5(7) damage, Cast 1, Imbued 1
+Rod Strangle — 1(0): Deal damage equal to current Cast to ALL enemies, Reel.
+Tide Tear - 1: Deal 6(8) Damage to ALL, Discard the top 3(4) Cards of your draw pile.
+
+Powers:
+Fisherman’s Fortitude — 1: 2(3) Block when you cast.
+Shardy Shrapnel — 1: +6(8) shrapnel damage
+Auto Cannon — 2: Fires at start of turn (Wet)
+Explosive Gunpowder — 1: Cannonballs deal double, exhaust.
+Vault — 1: Gain 2(3) Gem Slots
+Gilded — 1: The first time a turn you have 10 cards in your hand gain 2(3) energy.
+Masterbait — 2(1): Every time you cast, cast 1 more
+Idolatry — 2: Whenever you play a card with a modifier, deal 4(6) damage to all enemies. 
+Torrents — 1: Gain 6(8) Waterwall. When an attack is deflected by Waterwall, return the damage to the enemy.
+
+═════════════════════════════
+RARE CARDS:
+═════════════════════════════
+
+Skills:
+Sorcery — 1(0): Add Imbued 1 to a card in your hand, Exhaust
+Murky Water — 2: Gain 25(30) Waterwall.
+Entrancing Melody — 2: Apply 3 Trance 2(3) times.
+Artillery — 1: Add 5 random Cannonballs to your hand, Exhaust
+Perfect Catch — 2: Reel, Enchant the first 2(3) reeled cards without using gem charges.
+Bejeweled — 1(0): Next turn, temporarily gain all gems, if ignoring gem slots.
+Sea Shield — 1: Block 12(15), Wet.
+Booty — 3: Gain 15(20) Block, Gain a Gem Slot, Acquire Amber/Opal.
+Wash - X: Choose X(+1) cards from you draw pile, imbue them and discard them.
+
+Attacks:
+Enchanted Cutlass — 3: Deal 25 damage, Imbued 2(3)
+Magic Melt — 1: Deal 5 Damage to ALL and Gain 5 Block, Imbued 3(4)
+Gem Cannon — 2: Fire all your gems for 20(30) each.
+Bejeweled Strike — 1: Deal 10(15) Damage, Gain a Gem Slot, Aquire a Ruby/Saphire/Emerald.
+Hookshot — 2(1): Fire the Cannon, Reload all fired cannonballs.
+Harpoon — 2: Deal 15, Cast 6, Reel (Wet)
+Tidepool - 3: Deal 5 damage, Gain 5 Waterwall, apply 1 weak and vulnerable to all enemies, Add a copy of this card into the discard pile, (Wet)
+
+Powers:
+Flawless Stone — 2(1): Gain Diamond, Diamonds can apply Wet to any Card.
+Enchanted Rod — Power 1: The first (two) card reeled each turn is imbued without using gem charges.
+Fully Loaded — Power 2: Fire cannon each turn. (Wet).
+Jinx — Power 2: When you apply Buffs or Debuff, apply 50(75)% more stacks.
+Sorcerer Form — Power 3: All cards gain embued 1 (Ethereal).
+Evasive — Power 1: Gain 5(7) Slippery, cannot gain block
+Bartering — Power 1: Remove all gems, gain 15(25)!gold for each gem removed. 
+X Marks the Spot — 1(0): At the start of your turn choose any Gem and acquire it.
+
+═════════════════════════════
+RELICS:
+═════════════════════════════
+
+Common Relic - Whenever you cast, gain 2 block.
+
+Uncommon Relic - Choose 1 of 2 random Gems to Aquire at the start of combat.
+
+ Uncommon Relic - At the start of combat, give 2 cards in the draw pile Imbued 1.
+
+Rare Relic - When you reel, reduce the cost of the hooked card by 1 this turn
+
+Rare Relic - At the end of your turn, gain 5 Waterwall.
+
+Rare Relic - Cannonballs deal 5 extra damage.
+
+Rare Relic - Strikes and defends gain imbued 1
+
+Shop Relic - When you take damage, Cast 1.
+
+Dusty Tome-
+Plunder: 1 - Gain 5 gem slots, Gain a random unique gem each turn. (Innate)
+
+═════════════════════════════
+DESIGN DISCUSSION:
+═════════════════════════════
+
+Reel and Cast:
+
+One of the major goals for this character was to create a character with no draw cards. This is the biggest weakness of the Seaborne, as it means you can't rely on any one particular card. This is why the common Gem acquisition cards upgrade to innate, to allow you to create consistent scaling in your deck.
+
+Reel and Cast act as the draw alternative, pushing you towards repeatedly playing cards and scaling them up. 
+
+This mechanic is the greatest element of complexity for the character, because it makes the order in which you play your cards more important then usual, as this is the same order they will appear in the discard pile. This skill barrier of this character is figuring out how to play your card to allow you to bring back important cards on later turns.
+
+Reel and Cast also have some elements of the Silent's discard mechanics with the Wet mechanic. Wet cards are even more powerful then Sly cards, as their effects are triggered, but the card is still placed into your hand. This allows you to gain the effects of exhaust cards multiple times for example. Currently I think wet is probably a bit overtuned, but to fix that I can just reduce the values on wet cards.
+
+Block alternatives:
+
+One of this characters major features is their block alternatives. Waterwall and Slippery are both used to deal with different types of attacks. Waterwall is excellent at blocking multiattacks and chip damage. Slippery helps deal with large attacks. 
+
+Due to these alternatives, I am aiming to make creating block a bit harder for The Seaborne then other characters. I don't know if that has been successful as of yet, but it is something to work on.
+
+Trance:
+
+Trance is probably the most experimental mechanic this character has. By allowing you to essentially stunlock the enemy into performing a particular intent, you can strategically use the block alternatives to greater effect. 
+
+Trance will be very strong on its own against some enemies, for example, you can buy yourself free turns in the Lagavuilin Matriarch fight. However, it can't solve every fight in this way. For example, against the Queen, stunlocking the minion will not prevent the buffs given by the Queen. There is lots of interesting ways to use this mechanic depending on the fight. For example you can force an enemy to repeatedly buff, giving yourself free turns to attack, but if you don't kill it in time, you could face serious consequences. There are some very strong combos in the character with trance, like stunning the enemy with a Heavy Cannonball, and then applying Trance to extend the stun.
+
+I won't know if Trance is truly a viable mechanic until I give it a proper test, but I think the idea is very interesting. The Trance Resistance effect is design to balance the mechanic.
+
+Cannon:
+
+The cannon functions as a classic delayed payoff mechanic, while also giving the Seaborne some strong upfront AoE damage.
+
+The cannonballs also interact in a cool way with Imbuement. When you play and Imbue a Cannonball, it gains the modifier, which can then be immediately rewarded by firing the cannon.
+
+Gems:
+
+The gems are this characters primary scaling source. They allow you to scale in multiple directions, damage and block, buffs and debuffs, energy efficiency, and Reel/Cast.
+
+Cards can only be Imbued if they have the effect that your active gems can amplify. This stops the character from becoming a confusing mess, and gives me more control over the design of the character. I have added ways to add the Wet keyword to cards, but no way to add Reel or Cast, which might be something to think about.
+
+On their own, gems can only amplify one card a turn, however, with multiple gems you can modify multiple cards in a turn if you are careful of the order in which you play them. The card amplification effect is designed to work in direct correlation with Cast and Reek to give the character ways to generate impressive combos and output.
+
+Note that Imbuing a card refers to adding a modifier to it. Modifiers are separate to enchantments, meaning you can still Imbue enchanted cards.
+
+Gem Slots provide even further upwards scaling. 
+
+Repos for AI
+
+EXAMPLE REPO- https://github.com/Pet-Slime/TheDevoted.git
+
+My repo - https://github.com/CamLam01/SEABOURNE.git
+
+Baselib - https://github.com/Alchyr/BaseLib-StS2.git
+
+STS 2 Decompiled - https://github.com/Camlam01/sts2.git
